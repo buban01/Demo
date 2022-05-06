@@ -4,6 +4,9 @@ phases:
   install:
     runtime-versions:
       java: corretto11
+    commands:
+       - apt-get update -y
+       - apt-get install -y maven
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
