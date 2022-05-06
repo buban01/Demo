@@ -10,7 +10,7 @@ phases:
       - echo $(java -version)
       - echo $JAVA_HOME
       - echo $(mvn --version)
-      - echo $which java
+      - echo $(which java)
   build:
     commands:
       - echo Build started on `date`
