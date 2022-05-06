@@ -7,6 +7,10 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
+      - echo $(java -version)
+      - echo $JAVA_HOME
+      - echo $(mvn --version)
+      - echo $which java
   build:
     commands:
       - echo Build started on `date`
